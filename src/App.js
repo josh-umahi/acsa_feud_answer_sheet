@@ -21,15 +21,18 @@ const App = () => {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <h1>Answer Sheet</h1>
         <form className='input_div' onSubmit={(e) => {
           e.preventDefault()
           changeQuestion(number_input_entered)
         }}>
-          <input onChange={e => set_number_input_entered(e.target.value)} type="text" placeholder='Enter a number between 1 and 200' id="" />
-          <button type="submit">submit</button>
+          <div>
+            <input onChange={e => set_number_input_entered(e.target.value)} type="text" placeholder='Enter a number' id="" />
+            <button type="submit">submit</button>
+          </div>
+          <p>Enter a number between 1 and 200</p>
         </form>
 
         {question &&

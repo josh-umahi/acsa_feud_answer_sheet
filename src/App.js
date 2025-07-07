@@ -10,7 +10,7 @@ const App = () => {
 
   const changeQuestion = (question_number_parameter) => {
     const question_number = parseInt(question_number_parameter.trim())
-    if (isNaN(question_number) || !Number.isInteger(question_number) || question_number < 1 || question_number > 200) {
+    if (isNaN(question_number) || !Number.isInteger(question_number) || question_number < 1 || question_number > 1000) {
       return
     }
 
@@ -32,7 +32,7 @@ const App = () => {
             <input onChange={e => set_number_input_entered(e.target.value)} type="text" placeholder='Enter a number' id="" />
             <button type="submit">submit</button>
           </div>
-          <p>Enter a number between 1 and 200</p>
+          <p>Enter a number between 1 and 1000</p>
         </form>
 
         {question &&

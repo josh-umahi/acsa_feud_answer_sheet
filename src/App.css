@@ -104,3 +104,38 @@ a {
 a:hover{
   text-decoration: underline;
 }
+
+/* === Password Gate (matches existing style) === */
+
+.gate_box {
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #c5e4e7;
+  padding: 24px;
+  margin-top: 40px;
+  background: transparent; /* keep your teal background visible */
+}
+
+.gate_subtitle {
+  color: white;
+  opacity: 0.85;
+  margin-top: 0;
+}
+
+.gate_hint {
+  color: white;
+  opacity: 0.6;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.gate_error {
+  color: #ffdddd;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  padding: 8px 12px;
+  display: inline-block;
+  margin-top: -24px; /* pull closer to form */
+  margin-bottom: 16px;
+  font-size: 16px;
+}

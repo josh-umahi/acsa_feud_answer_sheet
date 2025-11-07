@@ -51,8 +51,7 @@ const App = () => {
         }
       </header>
       <footer>
-        <h4>Created by Yours Truly.</h4>
-        <h4>Yours Truly is me, Joshua Umahi.</h4>
+        <h4>Created by <a href="https://joshumahi.vercel.app/" target="_blank" rel="noopener">Joshua Umahi</a>.</h4>
       </footer>
     </div>)
 }
